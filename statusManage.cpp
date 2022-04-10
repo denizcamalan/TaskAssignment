@@ -10,12 +10,19 @@ int getNumber(){
     int jobNumber;  //number of tasks
     cout << "Enter number of jobs: ";
     cin >> jobNumber;
-        while(!cin)
+
+        while((!cin) || (jobNumber > 1000))
         {
             // user  didn't input a number
             cin.clear(); // reset failbit
             cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //skip bad input
-            cout << "It is not a proper number. Please enter another number: ";
+            if (!cin){
+                cout << "It is not a proper number. Please enter another number: ";
+            }else {
+                cout << "---- Exceed number of job ----" << endl;
+                cout << "It is not a proper number. Please enter another number: ";
+
+            }
             // next, request user reinput
             cin >> jobNumber;
         }
