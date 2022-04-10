@@ -39,9 +39,3 @@ If user did not assign any job to some ID, their status observe as an Idle.
 > :warning: **If you enter commands except status and quit command**: You need valid job ID.
 
 > :warning: **Do not enter a value over 1000 for N**: Max number of jobs is 1000.
-
-
-
-
-
-
