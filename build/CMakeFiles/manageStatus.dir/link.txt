@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -dynamiclib -Wl,-headerpad_max_install_names -o libmanageStatus.dylib -install_name @rpath/libmanageStatus.dylib CMakeFiles/manageStatus.dir/statusManage.cpp.o 

@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/Users/denizcamalan/respitories/TestAssignment/build",
+  "command": "/usr/bin/clang++ -DmanageStatus_EXPORTS  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -std=gnu++17 -o CMakeFiles/manageStatus.dir/statusManage.cpp.o -c /Users/denizcamalan/respitories/TestAssignment/statusManage.cpp",
+  "file": "/Users/denizcamalan/respitories/TestAssignment/statusManage.cpp"
+},
+{
+  "directory": "/Users/denizcamalan/respitories/TestAssignment/build",
+  "command": "/usr/bin/clang++ -DgetNumber_EXPORTS  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -std=gnu++17 -o CMakeFiles/getNumber.dir/statusManage.cpp.o -c /Users/denizcamalan/respitories/TestAssignment/statusManage.cpp",
+  "file": "/Users/denizcamalan/respitories/TestAssignment/statusManage.cpp"
+},
+{
+  "directory": "/Users/denizcamalan/respitories/TestAssignment/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/out.dir/main.cpp.o -c /Users/denizcamalan/respitories/TestAssignment/main.cpp",
+  "file": "/Users/denizcamalan/respitories/TestAssignment/main.cpp"
+},
+{
+  "directory": "/Users/denizcamalan/respitories/TestAssignment/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/out.dir/statusManage.cpp.o -c /Users/denizcamalan/respitories/TestAssignment/statusManage.cpp",
+  "file": "/Users/denizcamalan/respitories/TestAssignment/statusManage.cpp"
+}
+]
