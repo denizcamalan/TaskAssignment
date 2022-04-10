@@ -27,13 +27,12 @@ Also, N defines the number of ID. Used same number of ID and ID numbers only can
 --> If user select number of jobs : 5
 --> Number of id assign automatically 5 ;
                                         
-                                `
-                        ID1 -> 1
-                        ID2 -> 2
-                        ID3 -> 3
-                        ID4 -> 4
-                        ID5 -> 5                                                                        
-`
+                        `
+        ID1 -> 1
+        ID2 -> 2
+        ID3 -> 3
+        ID4 -> 4
+        ID5 -> 5        `
 
 
 If user did not assign any job to some ID, their status observe as an Idle. 
