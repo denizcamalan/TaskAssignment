@@ -17,7 +17,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -34,12 +35,20 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "checkTask::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-checkTask-Debug-4ed5ca0e33d29827810a.json",
+					"name" : "checkTask",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "getNumber::@6890427a1f51a3e7e1df",
@@ -50,14 +59,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "manageStatus::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-manageStatus-Debug-da97a3d7cb4f96f8210e.json",
+					"jsonFile" : "target-manageStatus-Debug-158bcacdf0326c677442.json",
 					"name" : "manageStatus",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "out::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-out-Debug-680ed95a224bd4cf6767.json",
+					"jsonFile" : "target-out-Debug-c1cc72ca7398f80ab0a2.json",
 					"name" : "out",
 					"projectIndex" : 0
 				}

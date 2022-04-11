@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/manageStatus.dir/statusManage.cpp.o"
   "CMakeFiles/manageStatus.dir/statusManage.cpp.o.d"
-  "libmanageStatus.dylib"
+  "libmanageStatus.a"
   "libmanageStatus.pdb"
 )
 

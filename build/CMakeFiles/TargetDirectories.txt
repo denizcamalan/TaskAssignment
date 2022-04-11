@@ -1,5 +1,6 @@
 /Users/denizcamalan/respitories/TestAssignment/build/CMakeFiles/manageStatus.dir
 /Users/denizcamalan/respitories/TestAssignment/build/CMakeFiles/getNumber.dir
+/Users/denizcamalan/respitories/TestAssignment/build/CMakeFiles/checkTask.dir
 /Users/denizcamalan/respitories/TestAssignment/build/CMakeFiles/out.dir
 /Users/denizcamalan/respitories/TestAssignment/build/CMakeFiles/edit_cache.dir
 /Users/denizcamalan/respitories/TestAssignment/build/CMakeFiles/rebuild_cache.dir

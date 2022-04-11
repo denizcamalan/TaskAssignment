@@ -108,7 +108,7 @@ out_EXTERNAL_OBJECTS =
 out: CMakeFiles/out.dir/main.cpp.o
 out: CMakeFiles/out.dir/statusManage.cpp.o
 out: CMakeFiles/out.dir/build.make
-out: libmanageStatus.dylib
+out: libmanageStatus.a
 out: libgetNumber.dylib
 out: CMakeFiles/out.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/denizcamalan/respitories/TestAssignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable out"

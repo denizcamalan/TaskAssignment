@@ -5,12 +5,17 @@ project(RelimetricsTest VERSION 1.0)
 set(CMAKE_CXX_STANDARD 17)
 
 add_library(
-    manageStatus SHARED
+    manageStatus STATIC
     statusManage.hpp
     statusManage.cpp
 )
 add_library(
     getNumber SHARED
+    statusManage.hpp
+    statusManage.cpp
+)
+add_library(
+    checkTask SHARED
     statusManage.hpp
     statusManage.cpp
 )

@@ -13,6 +13,9 @@ int main()
     int N = getNumber();
     int idNumber; // job id
 
+    // for checking task type
+    int number = 0;
+    
     // map, id and status template
 
     std::map<int, std::string> idTask;
@@ -27,8 +30,10 @@ int main()
     while (word[0] != "quit"){
 
         
+        
         cout << "" << endl;
         if (i >= 1){ // except first loop
+        cout << "Task is: " << checkTask(number) << endl;
         cout << "Please enter your command: ";
         }
         
@@ -63,15 +68,19 @@ int main()
                 // giving tasks of job
                 if ((idTask[idNumber] == "Aborted") && (word[0] == "start") ){
                     idTask[idNumber] = status;
+                    number++;
                     continue;
                 }else if ((idTask[idNumber] == "Paused") && (word[0] == "resume")){
                     idTask[idNumber] = status;
+                    number++;
                     continue;
                 }else if ((idTask[idNumber] == "Running") && ((word[0] == "pause") || (word[0] == "abort"))){
                     idTask[idNumber] = status;
+                    number++;
                     continue;
                 }else if ((idTask[idNumber] == "Idle") && (word[0] == "start") ){
                     idTask[idNumber] = status;
+                    number++;
                     continue;
                 }else{
                     cout << "---- No job were assigned ----" << endl;
@@ -83,6 +92,7 @@ int main()
             }
         }else if (word[0] == ""){
             i++;
+            number++;
         }else if ((word[0] == "status") ){
             
             //geting the status
@@ -91,7 +101,7 @@ int main()
             for( itr = idTask.begin(); itr != idTask.end(); ++itr){
 
                 cout << "ID => " << itr->first << ", Status => " << itr->second.c_str() << endl;
-
+                
                 continue;
             }
 

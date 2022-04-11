@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "out"
+			"path" : "libcheckTask.dylib"
 		}
 	],
 	"backtrace" : 1,
@@ -10,8 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"target_link_libraries"
+			"add_library"
 		],
 		"files" : 
 		[
@@ -25,13 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 20,
+				"line" : 17,
 				"parent" : 0
 			}
 		]
@@ -42,10 +35,16 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk"
+					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC"
 				},
 				{
 					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "checkTask_EXPORTS"
 				}
 			],
 			"language" : "CXX",
@@ -59,54 +58,24 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
 				1
 			]
 		}
 	],
-	"dependencies" : 
-	[
-		{
-			"backtrace" : 2,
-			"id" : "manageStatus::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "getNumber::@6890427a1f51a3e7e1df"
-		}
-	],
-	"id" : "out::@6890427a1f51a3e7e1df",
+	"id" : "checkTask::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
-			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-Wl,-rpath,/Users/denizcamalan/respitories/TestAssignment/build",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "libmanageStatus.dylib",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "libgetNumber.dylib",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "out",
-	"nameOnDisk" : "out",
+	"name" : "checkTask",
+	"nameOnDisk" : "libcheckTask.dylib",
 	"paths" : 
 	{
 		"build" : ".",
@@ -115,10 +84,16 @@
 	"sourceGroups" : 
 	[
 		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
 				1
 			]
 		}
@@ -127,16 +102,15 @@
 	[
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "statusManage.hpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "statusManage.cpp",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "SHARED_LIBRARY"
 }

@@ -143,6 +143,19 @@ getNumber/fast:
 .PHONY : getNumber/fast
 
 #=============================================================================
+# Target rules for targets named checkTask
+
+# Build rule for target.
+checkTask: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 checkTask
+.PHONY : checkTask
+
+# fast build rule for target.
+checkTask/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkTask.dir/build.make CMakeFiles/checkTask.dir/build
+.PHONY : checkTask/fast
+
+#=============================================================================
 # Target rules for targets named out
 
 # Build rule for target.
@@ -186,6 +199,7 @@ statusManage.o: statusManage.cpp.o
 statusManage.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manageStatus.dir/build.make CMakeFiles/manageStatus.dir/statusManage.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/getNumber.dir/build.make CMakeFiles/getNumber.dir/statusManage.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkTask.dir/build.make CMakeFiles/checkTask.dir/statusManage.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/statusManage.cpp.o
 .PHONY : statusManage.cpp.o
 
@@ -196,6 +210,7 @@ statusManage.i: statusManage.cpp.i
 statusManage.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manageStatus.dir/build.make CMakeFiles/manageStatus.dir/statusManage.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/getNumber.dir/build.make CMakeFiles/getNumber.dir/statusManage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkTask.dir/build.make CMakeFiles/checkTask.dir/statusManage.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/statusManage.cpp.i
 .PHONY : statusManage.cpp.i
 
@@ -206,6 +221,7 @@ statusManage.s: statusManage.cpp.s
 statusManage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manageStatus.dir/build.make CMakeFiles/manageStatus.dir/statusManage.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/getNumber.dir/build.make CMakeFiles/getNumber.dir/statusManage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkTask.dir/build.make CMakeFiles/checkTask.dir/statusManage.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/statusManage.cpp.s
 .PHONY : statusManage.cpp.s
 
@@ -217,6 +233,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... checkTask"
 	@echo "... getNumber"
 	@echo "... manageStatus"
 	@echo "... out"

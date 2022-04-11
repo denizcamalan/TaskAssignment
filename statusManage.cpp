@@ -30,24 +30,43 @@ int getNumber(){
 }
 
 //commands
-    const std::string status_running("Running");
-    const std::string status_paused("Paused");
-    const std::string status_aborted("Aborted");
+    const std::string statusRunning("Running");
+    const std::string statusPaused("Paused");
+    const std::string statusAborted("Aborted");
 
 std::string manageStatus(std::string word)
 {
     std::string status = "";
     if (word == "start"){
-        status = status_running;
+        status = statusRunning;
     }
     if (word == "pause"){
-        status = status_paused;
+        status = statusPaused;
     }
     if (word == "abort"){
-        status = status_aborted;
+        status = statusAborted;
     }
     if (word == "resume"){
-        status = status_running;
+        status = statusRunning;
     }
     return status;
+}
+
+bool taskOne(int number) {
+    // counting even numbers
+    if (number%2 == 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+std::string checkTask(int number) {
+    string taskName = "";
+    if (!(taskOne(number))){
+        taskName = "Task 1 is running odd";
+    }else {
+        taskName = "Task 2 is running even";
+    }
+    return taskName;
 }

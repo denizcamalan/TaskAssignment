@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -dynamiclib -Wl,-headerpad_max_install_names -o libcheckTask.dylib -install_name @rpath/libcheckTask.dylib CMakeFiles/checkTask.dir/statusManage.cpp.o 
