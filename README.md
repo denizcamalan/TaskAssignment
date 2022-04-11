@@ -9,7 +9,6 @@ The manager run within a console application and accept control commands from a 
 # Usage
 
 
-                                                                                                                                `
                 Application input: N – number of jobs to run.
 
                 Control commands:
@@ -20,12 +19,12 @@ The manager run within a console application and accept control commands from a 
                 • pause <id> - halts execution of a job with the given id
                 • resume <id> - resumes execution of a halted job
                 • quit – aborts all running jobs and quits the application                                                        
-                                                                                                                                `
+                                                                                                                                
 
 Also, N defines the number of ID. Used same number of ID and ID numbers only can be between 1 and N because some jobs can assign same ID multiple times and some ID status must indicate "Idle" status.
 
 --> If user select number of jobs : 5
---> Number of id assign automatically 5 ;
+    --> Number of id assign automatically 5 ;
 
         ID1 -> 1
         ID2 -> 2
