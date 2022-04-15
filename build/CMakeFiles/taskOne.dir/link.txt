@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -dynamiclib -Wl,-headerpad_max_install_names -o libtaskOne.dylib -install_name @rpath/libtaskOne.dylib CMakeFiles/taskOne.dir/statusManage.cpp.o 

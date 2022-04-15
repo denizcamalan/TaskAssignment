@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmanageStatus.a CMakeFiles/manageStatus.dir/statusManage.cpp.o
-/usr/bin/ranlib libmanageStatus.a
