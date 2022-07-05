@@ -1,5 +1,5 @@
-# TestAssignment
- Relimetrics Test Assignment
+# TaskAssignment
+ Relimetrics Task Assignment
 
 This project controls execution of tasks running as parallel jobs. At the program startup, the task manager ask the input parameter N. N defines the number of jobs that task manager assign to job IDs. Task manager assign each job to unique job ID. Task manager ask a command and N, until user enter a valid command and N is provided in a valid format.
 
